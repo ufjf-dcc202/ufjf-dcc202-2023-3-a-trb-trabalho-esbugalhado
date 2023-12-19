@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,9 @@
 
         .cell {
             width: 100px;
+            max-width: 100px;
+            max-height: 100px;
+            background-size: 100%;
             height: 100px;
             display: flex;
             justify-content: center;
@@ -104,19 +107,21 @@
     </div>
 
     <div class="board" id="board2">
-        <div class="cell" id="cell1b2"></div>
-        <div class="cell" id="cell2b2"></div>
-        <div class="cell" id="cell3b2"></div>
-        <div class="cell" id="cell4b2"></div>
-        <div class="cell" id="cell5b2"></div>
-        <div class="cell" id="cell6b2"></div>
-        <div class="cell" id="cell7b2"></div>
-        <div class="cell" id="cell8b2"></div>
-        <div class="cell" id="cell9b2"></div>
+        <div class="cell" id="cell1b2" onclick="jogada('cell1b2')"></div>
+        <div class="cell" id="cell2b2" onclick="jogada('cell2b2')"></div>
+        <div class="cell" id="cell3b2" onclick="jogada('cell3b2')"></div>
+        <div class="cell" id="cell4b2" onclick="jogada('cell4b2')"></div>
+        <div class="cell" id="cell5b2" onclick="jogada('cell5b2')"></div>
+        <div class="cell" id="cell6b2" onclick="jogada('cell6b2')"></div>
+        <div class="cell" id="cell7b2" onclick="jogada('cell7b2')"></div>
+        <div class="cell" id="cell8b2" onclick="jogada('cell8b2')"></div>
+        <div class="cell" id="cell9b2" onclick="jogada('cell9b2')"></div>
     </div>
 
     <div id="jogador2Text">JOGADOR 2</div>
     <div id="jogador1Text">JOGADOR 1</div>
     <div id="topRightText">ESBUGALHADO</div>
+
+    <script src="main.js"></script>
 </body>
 </html>
