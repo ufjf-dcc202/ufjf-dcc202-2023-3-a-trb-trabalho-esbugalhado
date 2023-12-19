@@ -1,49 +1,26 @@
-function jogadorDois() {
-    let casaRandom = Math.floor(Math.random() * 10);
-  
-    switch (casaRandom) {
-      case 0:
-        let dadoRandom = Math.floor(Math.random() * 7);
-        
-        break;
-      case 1:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 1
-        break;
-      case 2:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 2
-        break;
-      case 3:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 3
-        break;
-      case 4:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 4
-        break;
-      case 5:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 5
-        break;
-      case 6:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 6
-        break;
-      case 7:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 7
-        break;
-      case 8:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 8
-        break;
-      case 9:
-         dadoRandom = Math.floor(Math.random() * 7);
-        // Faça algo com casaRandom e dadoRandom quando casaRandom for 9
-        break;
-      default:
-        // Faça algo se casaRandom não corresponder a nenhum caso
-    }
+function selecionaDado() {
+  let dadoRandom = Math.floor(Math.random() * 7);
+  switch (dadoRandom) {
+    case 1:
+      return "images/dado1.png";
+
+    case 2:
+      return "images/dado2.png";
+
+    case 3:
+      return "images/dado3.png";
+
+    case 4:
+      return "images/dado4.png";
+
+    case 5:
+      return "images/dado5.png";
+
+    case 6:
+      return "images/dado6.png";
+
+    default:
+      return "images/dado6.png"
+
   }
-  
+}
