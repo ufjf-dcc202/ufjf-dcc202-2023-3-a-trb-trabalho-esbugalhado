@@ -10,6 +10,8 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color:midnightblue;
+            color: aliceblue;
         }
 
         .board {
@@ -32,12 +34,12 @@
             align-items: center;
             font-size: 24px;
             font-weight: bold;
-            border: 2px solid #333;
-            cursor: pointer;
+            border: 2px solid white;
+            background-color:aliceblue;
         }
 
         .cell:hover {
-            background-color: #f0f0f0;
+            background-color:white;
         }
 
         #playButton {
@@ -60,13 +62,30 @@
 
         #topRightText {
             position: fixed;
+            top: 30px;
+            right: 100px;
+            font-size: 40px; /* Letras maiores */
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #jogador1Text {
+            position: fixed;
+            top: 350px;
+            right: 50px;
+            font-size: 32px; /* Letras maiores */
+            font-weight: bold;
+        }
+
+        #jogador2Text {
+            position: fixed;
             top: 10px;
-            right: 10px;
+            left: 20px;
             font-size: 32px; /* Letras maiores */
             font-weight: bold;
         }
     </style>
-    <title>Jogo da Velha</title>
+    <title>Jogo ESBUGALHADO</title>
 </head>
 <body>
     <button id="playButton">Jogar</button>
@@ -95,6 +114,8 @@
         <div class="cell"></div>
     </div>
 
+    <div id="jogador2Text">JOGADOR 2</div>
+    <div id="jogador1Text">JOGADOR 1</div>
     <div id="topRightText">ESBUGALHADO</div>
 </body>
 </html>
